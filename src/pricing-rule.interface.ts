@@ -1,6 +1,6 @@
 import { ScanModel } from "./product.model";
 
 export interface PricingRule {
-    condition(items: ScanModel): boolean;
+    condition(item: ScanModel): boolean;
     action(items: ScanModel[]): number;
 }

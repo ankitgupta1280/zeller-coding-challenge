@@ -20,9 +20,7 @@ export class BulkBuyPricingRule implements PricingRule {
     }
 
     condition(item: ScanModel): boolean {
-        if(item.quantity > this.offeredQuantity)
-            return true;
-        return false;
+        return item.quantity > this.offeredQuantity
     }
 }
 
@@ -47,9 +45,7 @@ export class MultiBuyDiscountPricingRule implements PricingRule {
     }
 
     condition(item: ScanModel): boolean {
-        if(item.quantity >= this.offerQuantity)
-            return true
-        return false;
+        return item.quantity >= this.offerQuantity
     }
 }
 
@@ -64,7 +60,7 @@ export class DefaultPrinciple implements PricingRule {
         return amount
     }
 
-    condition(items: ScanModel): boolean {
+    condition(item: ScanModel): boolean {
         return true;
     }
 }

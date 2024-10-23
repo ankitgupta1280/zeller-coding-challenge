@@ -5,3 +5,10 @@
 3. I have also implemented default priinciple that will run for all other items.
 4. One more thing can be implemented if there are multiple pricing rules for the same sku , then we can either skip the rest after first or we can take the last pricing rule for the specifc sku. 
 5. Pricing rule can be extended based on the customer loyalty status or some different discounts and rules etc.
+
+Steps to run :
+
+npm install
+npm run build
+npm test
+npm start
